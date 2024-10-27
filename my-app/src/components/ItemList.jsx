@@ -8,6 +8,7 @@ export const ItemList = () => {
 
     return (
         <>
+        <h1>Select an item</h1>
             {items.map(item => (
                 <div>
                     <h2 key={item}>{item}</h2>
