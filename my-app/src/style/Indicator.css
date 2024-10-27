@@ -1,0 +1,30 @@
+.step{
+  display: inline-block; 
+  width: 50px; 
+  height: 50px; 
+  background-color: rgb(141, 138, 138); 
+  color: white; 
+  text-align: center; 
+  line-height: 50px; 
+  border-radius: 50%; 
+
+}
+
+.stepsContainer{
+    justify-content: space-around;
+}
+.container{
+    margin-top: 10%;
+
+}
+.flexItems{
+    display: flex; 
+}
+
+.prevnext{
+    background-color:rgb(51, 215, 51) ;
+}
+
+.step.active {
+    background-color: green; /* Change background to green when active */
+  }
