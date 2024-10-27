@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { SelectedItem } from './SelectedItem';
+import { Link } from 'react-router-dom';
 
 export const ItemList = () => {
 
@@ -24,6 +25,10 @@ export const ItemList = () => {
             ))}
 
             <SelectedItem item={selectedItem} />
+            <Link to="/header">header</Link>
+            <br />
+            <Link to="/navbar">navbar</Link>
+
 
         </>
     )

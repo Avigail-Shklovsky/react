@@ -5,23 +5,20 @@
 // import Button from './components/Button';
 // import Image from './components/Image';
 
+import Header from "./components/Header";
 import { ItemList } from "./components/ItemList";
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Navbar } from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      {/* <Header text="hello world"></Header>
-     <Header text="hello universe"></Header>
-     <Paragraph/>
-     <Link/>
-     <Button></Button>
-     <Image></Image> */}
-      <ItemList></ItemList>
-
-
-
-
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<ItemList />} />
+      <Route path="/header" element={<Header />} />
+      <Route path="/navbar" element={<Navbar />} />
+    </Routes>
+  </BrowserRouter>
   );
 }
 
